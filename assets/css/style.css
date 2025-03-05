@@ -18,3 +18,175 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Top Bar Styles */
+.top-bar {
+  background: var(--primary-color);
+}
+
+.social-links a {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.brand-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 1rem 1.2rem !important;
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar .btn-primary {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  background: linear-gradient(rgba(108, 92, 231, 0.9), rgba(162, 155, 254, 0.9)),
+    url("../images/IMG-20250305-WA0039.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.hero-overlay {
+  padding: 100px 0;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-section .btn-primary {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Service Cards */
+.hero-section .service-cards {
+  position: relative;
+  margin-top: -100px;
+  z-index: 2;
+}
+
+.hero-section .service-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section .service-card i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.hero-section .service-card h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-section .service-card p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .service-cards {
+    margin-top: 50px;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    text-align: center;
+  }
+
+  .social-links {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
