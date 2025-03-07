@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Top Bar -->
+   <!-- Top Bar -->
     <div class="top-bar py-2 d-none d-lg-block">
       <div class="container">
         <div class="row align-items-center">
@@ -44,14 +44,14 @@
           </div>
           <!-- Social Links -->
           <div class="col-md-4">
-            <div class="social-links text-end">
-              <a href="#" class="text-white me-3"
+            <div class="social-links text-end d-flex justify-content-end">
+              <a href="#" class="text-white "
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#" class="text-white me-3"
+              <a href="#" class="text-white "
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a href="#" class="text-white me-3"
+              <a href="#" class="text-white "
                 ><i class="fab fa-instagram"></i
               ></a>
               <a href="#" class="text-white"
@@ -84,22 +84,20 @@
               <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="services.html">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#doctor">Doctor</a>
-            </li>
+           
 
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
-          <button class="btn btn-primary ms-3 d-none d-lg-block">
+          <a href="#contact" class="btn btn-primary ms-3 d-none d-lg-block">
             Get Appointment
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -132,35 +130,49 @@
           </div>
         </div>
       </div>
+      <!-- Services Cards -->
       <div class="service-cards">
         <div class="container">
-          <div class="row gap-4">
-            <div class="col-md-3">
-              <div class="service-card">
+          <div class="row ">
+            <div class="col-md-6 col-lg-3 mb-2">
+              <div class="service-card d-flex align-items-center gap-2">
                 <i class="fas fa-eye"></i>
-                <h4>Custom Prosthetics</h4>
+              <div>
+                  <h4>Custom Prosthetics</h4>
                 <p>Personalized Eye Solutions</p>
               </div>
+              </div>
             </div>
-            <div class="col-md-3">
-              <div class="service-card">
+            <div class="col-md-6 col-lg-3 mb-2">
+              <div class="service-card d-flex align-items-center gap-2">
                 <i class="fas fa-glasses"></i>
-                <h4>Eye Care</h4>
-                <p>Complete Eye Care Solutions</p>
+                <div>
+
+                  <h4>Eye Care</h4>
+                  <p>Complete Eye Care Solutions</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="service-card">
+            <div class="col-md-6 col-lg-3 mb-2">
+              <div class="service-card d-flex align-items-center gap-2">
                 <i class="fas fa-user-nurse"></i>
-                <h4>Free Consultation</h4>
-                <p>Expert Medical Advice</p>
+               
+               <div>
+
+                 <h4>Free Consultation</h4>
+                 <p>Expert Medical Advice</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="service-card">
+            <div class="col-md-6 col-lg-3 mb-2">
+              <div class="service-card d-flex align-items-center gap-2">
+
                 <i class="fas fa-microscope"></i>
+
+              <div>
                 <h4>Modern Technology</h4>
                 <p>Advanced Eye Solutions</p>
+              </div>
               </div>
             </div>
           </div>
@@ -169,7 +181,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section py-5" id="about">
+    <section class="about-section py-5" >
       <div class="container">
         <div class="row align-items-center">
           <!-- Image Column -->
@@ -243,7 +255,7 @@
                 </div>
               </div>
 
-              <a href="#services" class="btn btn-primary mt-4">More About Us</a>
+              <a href="about.html" class="btn btn-primary mt-4">More About Us</a>
             </div>
           </div>
         </div>
@@ -269,7 +281,7 @@
               appearance and confidence.
             </p>
             <a
-              href="#all-services"
+              href="services.html"
               class="btn btn-primary w-100 ms-auto d-none d-lg-flex align-items-center text-center justify-content-center"
             >
               All Services
@@ -598,75 +610,75 @@
 
 
       <!-- First Visit Section -->
-<section class="first-visit py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <span class="section-label position-relative">First Visit</span>
-      <h2 class="section-title">What to Expect During Your First Visit</h2>
-    </div>
-
-    <div class="row align-items-center">
-      <!-- Left Column Services -->
-      <div class="col-md-4">
-        <div class="service-section">
-          <h3 class="service-title">1. Consultation</h3>
-          <p class="service-text">
-            Your journey begins with a consultation where we discuss your needs, concerns, and expectations. This is your opportunity to ask questions and understand the process.
-          </p>
+    <section class="first-visit py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label position-relative">First Visit</span>
+          <h2 class="section-title">What to Expect During Your First Visit</h2>
         </div>
 
-        <div class="service-section">
-          <h3 class="service-title">2. Evaluation</h3>
-          <p class="service-text">
-            Our ocularist will examine your eye socket, take precise measurements, and discuss preferences regarding the color and appearance of the artificial eye.
-          </p>
-        </div>
+        <div class="row align-items-center">
+          <!-- Left Column Services -->
+          <div class="col-md-4">
+            <div class="service-section">
+              <h3 class="service-title">1. Consultation</h3>
+              <p class="service-text">
+                Your journey begins with a consultation where we discuss your needs, concerns, and expectations. This is your opportunity to ask questions and understand the process.
+              </p>
+            </div>
 
-        <div class="service-section">
-          <h3 class="service-title">3. Customization</h3>
-          <p class="service-text">
-            Using the latest technology and materials, we create a prosthetic eye that matches your natural eye as closely as possible.
-          </p>
+            <div class="service-section">
+              <h3 class="service-title">2. Evaluation</h3>
+              <p class="service-text">
+                Our ocularist will examine your eye socket, take precise measurements, and discuss preferences regarding the color and appearance of the artificial eye.
+              </p>
+            </div>
+
+            <div class="service-section">
+              <h3 class="service-title">3. Customization</h3>
+              <p class="service-text">
+                Using the latest technology and materials, we create a prosthetic eye that matches your natural eye as closely as possible.
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Column - Eye Image -->
+          <div class="col-md-4">
+            <div class="eye-image-container">
+              <img src="assets/images/procedure.png" alt="Close-up of human eye" class="eye-image">
+            </div>
+          </div>
+
+          <!-- Right Column Services -->
+          <div class="col-md-4">
+            <div class="service-section">
+              <h3 class="service-title">4. Fitting</h3>
+              <p class="service-text">
+                Once your prosthetic is ready, we ensure a perfect fit and make any necessary adjustments for maximum comfort and aesthetics.
+              </p>
+            </div>
+
+            <div class="service-section">
+              <h3 class="service-title">5. Education</h3>
+              <p class="service-text">
+                We provide guidance on maintaining and caring for your prosthetic eye, including hygiene and cleaning procedures.
+              </p>
+            </div>
+
+            <div class="service-section">
+              <h3 class="service-title">6. Follow-up</h3>
+              <p class="service-text">
+                Regular check-ups help ensure continued comfort and optimal fit.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Center Column - Eye Image -->
-      <div class="col-md-4">
-        <div class="eye-image-container">
-          <img src="assets/images/procedure.png" alt="Close-up of human eye" class="eye-image">
-        </div>
-      </div>
-
-      <!-- Right Column Services -->
-      <div class="col-md-4">
-        <div class="service-section">
-          <h3 class="service-title">4. Fitting</h3>
-          <p class="service-text">
-            Once your prosthetic is ready, we ensure a perfect fit and make any necessary adjustments for maximum comfort and aesthetics.
-          </p>
-        </div>
-
-        <div class="service-section">
-          <h3 class="service-title">5. Education</h3>
-          <p class="service-text">
-            We provide guidance on maintaining and caring for your prosthetic eye, including hygiene and cleaning procedures.
-          </p>
-        </div>
-
-        <div class="service-section">
-          <h3 class="service-title">6. Follow-up</h3>
-          <p class="service-text">
-            Regular check-ups help ensure continued comfort and optimal fit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!-- Contact Section -->
-    <section class="contact-section py-5">
+    <section class="contact-section py-5" id="contact">
       <div class="container">
         <div class="row">
           <!-- Left Column -->
@@ -841,10 +853,9 @@
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h3 class="footer-title">Quick Link</h3>
             <ul class="footer-links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#doctor">Our Doctor</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 

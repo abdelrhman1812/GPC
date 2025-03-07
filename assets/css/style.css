@@ -82,7 +82,7 @@ a {
   background: var(--primary-color);
 }
 
-.social-links a {
+.top-bar .social-links a {
   width: 30px;
   height: 30px;
   display: inline-flex;
@@ -99,11 +99,6 @@ a {
 /* Navbar Styles */
 .navbar {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-toggler {
-  color: var(--primary-color);
-  border: none;
 }
 
 .brand-text {
@@ -132,10 +127,16 @@ a {
   font-weight: 500;
   transition: all 0.3s ease;
 }
+
+.navbar-toggler {
+  color: var(--primary-color);
+  border: none;
+  outline: none;
+}
+
 /* Hero Section Styles */
 .hero-section {
   position: relative;
-
   min-height: 100vh;
 }
 
@@ -185,15 +186,14 @@ a {
 /* Service Cards */
 .hero-section .service-cards {
   position: relative;
-  margin-top: -100px;
+  margin-top: -50px;
   z-index: 2;
 }
 
 .hero-section .service-card {
   background: white;
-  padding: 30px 20px;
+  padding: 20px 20px;
   border-radius: 10px;
-  text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -212,7 +212,6 @@ a {
 .hero-section .service-card h4 {
   color: var(--text-color);
   font-size: 1.2rem;
-  margin-bottom: 10px;
 }
 
 .hero-section .service-card p {
@@ -323,7 +322,7 @@ a {
   padding: 100px 0;
 }
 
-.service-card {
+.services-section .service-card {
   background: white;
   padding: 30px;
   border-radius: 15px;
@@ -332,12 +331,12 @@ a {
   transition: all 0.3s ease;
 }
 
-.service-card:hover {
+.services-section .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.service-icon {
+.services-section .service-icon {
   width: 60px;
   height: 60px;
   background: var(--primary-color);
@@ -345,19 +344,19 @@ a {
   margin-bottom: 20px;
 }
 
-.service-icon i {
+.services-section .service-icon i {
   font-size: 24px;
   color: #fff;
 }
 
-.service-card h3 {
+.services-section .service-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 15px;
   color: #2d3436;
 }
 
-.service-card p {
+.services-section .service-card p {
   color: #6c757d;
   margin-bottom: 20px;
   font-size: 0.95rem;
@@ -735,6 +734,50 @@ label {
   font-size: 0.9rem;
   text-align: center;
 }
+.page-header {
+  min-height: 40vh;
+  padding: 40px 0;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-header-title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.breadcrumb-item {
+  font-size: 14px;
+}
+
+.breadcrumb-item a {
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--primary-color);
+}
+
+/* Page specific styles */
+.page-content {
+  margin-bottom: 50px;
+}
+
+.about-page .vision-section {
+  background-color: #f8f9fa;
+}
+.services-page .services-section {
+  background-color: #fff;
+}
 
 /* Responsive Styles */
 @media (max-width: 991px) {
@@ -830,21 +873,15 @@ label {
     margin-top: 10px;
     text-align: center;
   }
-  .hero-text {
-    font-size: 14px;
-  }
 
   .hero-title {
     font-size: 1.5rem;
   }
-
-  .hero-section .service-cards {
-    position: relative;
-    margin-top: 60px;
+  .hero-text {
+    font-size: 1rem;
   }
-
-  .hero-overlay {
-    padding: 60px 0;
+  .hero-section .service-cards {
+    margin-top: 30px;
   }
 
   /* service  */
@@ -890,9 +927,6 @@ label {
 
   .appointment-form {
     padding: 20px;
-  }
-  .eye-image-container {
-    margin: 2rem 0;
   }
 }
 
