@@ -1506,13 +1506,13 @@ label {
   }
 
   .slider-dots {
-    right: 10px;
     bottom: 0;
     top: auto;
     flex-direction: row;
     align-items: center;
     left: 50%;
     transform: translateY(-100%);
+    display: none;
   }
 
   /* service  */
