@@ -68,6 +68,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
         <img src="assets/images/logo.jpg" class="logo" alt="">
+        <span class="text-primary"> general prosthetic center </span>
         </a>
       
           <span   class="navbar-toggler"
@@ -103,85 +104,85 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div
-        class="hero-overlay"
-        style="
-          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('assets/images/IMG-20250305-WA0037.jpg');
-          background-size: cover;
-          background-position: center;
-          
-        "
-      >
-        <div class="container">
-          <div class="row min-vh-80 mb-5 align-items-center">
-            <div class="col-lg-7">
-              <span class="hero-tag">PROSTHETIC CARE</span>
-              <h1 class="hero-title">
-                Restoring Confidence Through Expert Care
-              </h1>
-              <p class="hero-text">
-                Specialized in creating custom prosthetic eyes with meticulous
-                attention to detail, helping patients regain their natural
-                appearance and confidence.
-              </p>
-              <a href="#contact" class="btn btn-primary btn-lg"
-                >Get A Free Consultation</a
-              >
-            </div>
+    <section class="hero-section overflow-hidden">
+    <div class="hero-overlay" id="heroBackground">
+      <div class="slider-controls">
+        <button class="slider-arrow prev-arrow" id="prevSlide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next-arrow" id="nextSlide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots" id="sliderDots">
+          <!-- Dots will be added here by JavaScript -->
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row min-vh-80 mb-5 align-items-center">
+          <div class="col-lg-7">
+            <span class="hero-tag">PROSTHETIC CARE</span>
+            <h1 class="hero-title">
+              Restoring Confidence Through Expert Care
+            </h1>
+            <p class="hero-text">
+              Specialized in creating custom prosthetic eyes with meticulous
+              attention to detail, helping patients regain their natural
+              appearance and confidence.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg"
+              >Get A Free Consultation</a
+            >
           </div>
         </div>
       </div>
-      <!-- Services Cards -->
-      <div class="service-cards">
-        <div class="container">
-          <div class="row ">
-            <div class="col-md-6 col-lg-3 mb-2">
-              <div class="service-card d-flex align-items-center gap-2">
-                <i class="fas fa-eye"></i>
+    </div>
+    
+    <!-- Services Cards -->
+    <div class="service-cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="service-card d-flex align-items-center gap-2">
+              <i class="fas fa-eye"></i>
               <div>
-                  <h4>Custom Prosthetics</h4>
+                <h4>Custom Prosthetics</h4>
                 <p>Personalized Eye Solutions</p>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="service-card d-flex align-items-center gap-2">
+              <i class="fas fa-glasses"></i>
+              <div>
+                <h4>Eye Care</h4>
+                <p>Complete Eye Care Solutions</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-2">
-              <div class="service-card d-flex align-items-center gap-2">
-                <i class="fas fa-glasses"></i>
-                <div>
-
-                  <h4>Eye Care</h4>
-                  <p>Complete Eye Care Solutions</p>
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="service-card d-flex align-items-center gap-2">
+              <i class="fas fa-user-nurse"></i>
+              <div>
+                <h4>Free Consultation</h4>
+                <p>Expert Medical Advice</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-2">
-              <div class="service-card d-flex align-items-center gap-2">
-                <i class="fas fa-user-nurse"></i>
-               
-               <div>
-
-                 <h4>Free Consultation</h4>
-                 <p>Expert Medical Advice</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-2">
-              <div class="service-card d-flex align-items-center gap-2">
-
-                <i class="fas fa-microscope"></i>
-
+          </div>
+          <div class="col-md-6 col-lg-3 mb-2">
+            <div class="service-card d-flex align-items-center gap-2">
+              <i class="fas fa-microscope"></i>
               <div>
                 <h4>Modern Technology</h4>
                 <p>Advanced Eye Solutions</p>
               </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- About Section -->
     <section class="about-section py-5" >
